@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript TH2</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <button onclick="demoPrompt()">Click</button>
+    <p id="result"></p>
+    <p id="result1"></p>
+    <script>
+        function demoPrompt(){
+    //prompt: các giá trị nhập trong prompt đều là giá trị có kiểu string
+    //let value= parseInt(prompt("Write something"));
+    //let value1 = parseInt(prompt("Write something"))
+    //let value = +prompt("Write something");
+    //let value1 = +prompt("Write something");
+    // let value= parseFloat(prompt("Write something"));
+    // let value1 = parseFloat(prompt("Write something"))
+    // document.write(value + "<br>");
+    // document.write(value1 + "<br>");
+    // document.write(value + value1);
+
+    //nhap su dung document.getElementById
+    let name= document.getElementById("name").value
+    document.write(name)
+    // alert(name)
+    // console.log(name)
+    // document.getElementById("result").innerText = "<b>" + name + "</b>";
+    // document.getElementById("result1").innerHTML = "<b>" + name + "</b>";
+        }
+</script>
+
+
+<!-- <script src="JSTH2.js"></script> -->
+</body>
+</html>
