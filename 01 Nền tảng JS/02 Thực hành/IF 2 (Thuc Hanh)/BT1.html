@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Gia Hoa Qua</h1>
+    <br>
+    <input type="text" id="fruit"><button onclick="showprice()">Xem GIa</button>
+    <h2 id="result"></h2>
+
+</body>
+<script>
+    function showprice(){
+        let fruit= document.getElementById("fruit").value 
+       // neu co 2 hoac nhieu case cung khoi lenh hanh dong: co the de chung hanh dong cho cacs case do
+        switch(fruit){
+            case "Oi":
+            case "Dua Hau": {
+                document.getElementById("result").innerHTML = "20,000 VND/kg"
+            }
+            break
+            case "Tao": 
+            case "Xoai":{
+                document.getElementById("result").innerHTML = "30,000 VND/kg"
+            }
+            break
+            case "Cam":
+            case "Chom chom": {
+                document.getElementById("result").innerHTML = "40,000 VND/kg"
+            }
+            break
+            case "Mang Cut": {
+                document.getElementById("result").innerHTML = "50,000 VND/kg"
+            }
+            break
+        }
+    }
+</script>
+</html>

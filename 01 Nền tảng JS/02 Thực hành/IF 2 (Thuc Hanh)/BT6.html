@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tinh nam am lich</h1>
+    <input type ="text" id="year">
+    <h2 id="result"></h2>
+    <button>Tinh</button>
+</body>
+    <script>
+        function calYear() {
+            let nam_duong = document.getElementById("year").value 
+            let nam_am = "Nam am la: "
+            let can = nam_duong % 10
+            let chi = nam_duong % 12
+            switch(can) {
+                case 0: {
+                    nam_am += "Canh"
+                }
+                break
+                case 1: {
+                    nam_am += "Tan "
+                }
+                break
+                case 2: {
+                    nam_am += "Nham "
+                }
+                break
+                case 3: {
+                    nam_am += "Quy "
+                }
+                break
+                case 4: {
+                    nam_am += "Giap "
+                }
+                break
+                case 5: {
+                    nam_am += "At "
+                }
+                break
+                case 6: {
+                    nam_am += "Binh"
+                }
+                break
+                case 7: {
+                    nam_am += "Dau"
+                }
+                break
+                case 8: {
+                    nam_am += "Mau "
+                }
+                break
+                case 9: {
+                    nam_am += "Ky "
+                }
+                break
+
+            }
+            switch(chi) {
+                case 1: {
+                    nam_am += "Canh"
+                }
+                break
+                case 2: {
+                    nam_am += "Canh"
+                }
+                break
+                case 3: {
+                    nam_am += "Canh"
+                }
+                break
+                case 4: {
+                    nam_am += "Canh"
+                }
+                break
+                case 5: {
+                    nam_am += "Canh"
+                }
+                break
+                case 6: {
+                    nam_am += "Canh"
+                }
+                break
+                case 7: {
+                    nam_am += "Canh"
+                }
+                break
+                case 8: {
+                    nam_am += "Canh"
+                }
+                break
+                case 9: {
+                    nam_am += "Canh"
+                }
+                break
+                case 10: {
+                    nam_am += "Canh"
+                }
+                break
+                case 11: {
+                    nam_am += "Canh"
+                }
+                break
+            }
+
+        }
+    </script>
+</html>

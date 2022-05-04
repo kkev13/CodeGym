@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinh so ngay trong thang</title>
+</head>
+<body>
+    <h1>Tinh ngay trong thang</h1>
+    <input type="text" id="month"><br>
+    <input type="text" id="year"><br>
+    <h2 id="result"></h2>
+    <button>TInh ngay</button>
+</body>
+<script>
+    function calDay(){
+        let month = document.getElementById("month").value 
+        switch(month){
+            case "1": 
+            case "3": 
+            case "5": 
+            case "7": 
+            case "8": 
+            case "10": 
+            case "12": {
+                document.getElementById("result").innerHTML = "Thang" + month + "co 31 ngay"
+            }
+            break
+            case "4": 
+            case "6": 
+            case "9": 
+            case "11": {
+                document.getElementById("result").innerHTML = "Thang" + month + "co 30 ngay"
+            }
+            break
+            case "2":{
+                //cach goi ham trong case; ham se thuc thi 1 khoi lenh tuong ung
+                calYear()
+                //cach viet truc tiep khoi lenh vao trong case
+                // let year = document.getElementById("year").value;
+                // if ((year % 100 == 0 && year % 400 ==0) || (year % 4 ==0 && year % 100 !=0)) {
+                //     document.getElementById("result").innerHTML = "Thang 2 co 29 ngay"
+                // }else {
+                //     document.getElementById("result").innerHTML = "Thang 2 co 28 ngay"
+                //     document.getElementById("result").innerHTML = "Thang 2 co 28 hoac 29 ngay"
+            }  
+            break
+            default:{
+                document.getElementById("result").innerHTML= "Day khong phai la thang trong nam"
+            } 
+        }
+    }
+    function calYear() {
+        let year = document.getElementById("year").value;
+        if ((year % 100 == 0 && year % 400 ==0) || (year % 4 ==0 && year % 100 !=0)) {
+            document.getElementById("result").innerHTML = "Thang 2 co 29 ngay"
+        }else {
+            document.getElementById("result").innerHTML = "Thang 2 co 28 ngay"
+        }
+    }
+</script>
+</html>

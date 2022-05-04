@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinh diem dai hoc khoi D</title>
+</head>
+<body>
+    <h1>TInh diem Dai Hoc khoi D</h1>
+    Mon Toan <input type="text" id="math">
+    Mon Van <input type="text" id="lit">
+    Mon Anh <input type="text" id="eng">
+    Khu Vuc <select id="area">
+        <option value="0.75">KV1</option>
+        <option value="0.5">KV2-NT</option>
+        <option value="0.25">KV2</option>
+        <option value="0">KV3</option>
+    </select>
+    <button onclick="calPoint">Tinh diem</button>
+    <h2 style="color:red">Tong diem Dai Hoc khoi D cua ban la: <span id="result"></span></h2>
+</body>
+<script>
+    function calPoint() {
+        let math = parseFloat(document.getElementById("math").value) 
+        let lit = parseFLoat(document.getElementById("lit").value)
+        let eng = parseFloat(document.getElementById("eng").value)
+        let areaPoint= parseFloat(document.getElementById("area").value)
+        document.getElementById("result").innerHTML= (math + lit + eng + areaPoint)
+    }
+</script>
+</html>
