@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let number = 1
+    function demo(){
+        number += 1
+        console.log(number);
+        setTimeout(demo,3000)
+    //cho phep goi di goi lai 1 ham trong 1 khoang tjan nhat dinh theo cai dat
+    // thoi gian dc tinh theo miliseconds
+    //tuong duong: requestAnimationFrame, chay muot hon so voi timeout nhung ko quy dinh dc tjan
+    }
+    demo()
+</script>
+</html>

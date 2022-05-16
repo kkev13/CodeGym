@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="bai1()">Click - Bai 1</button>
+    <button onclick="bai2()">Click - Bai 2</button>
+    <button onclick="bai3()">Click - Bai 3</button>
+    <button onclick="bai4()">Click - Bai 4</button>
+</body>
+<script>
+    //ham tra ve 1 mang theo nguoi dung nhao
+    function getArray(){
+        let n= prompt("nhap vao so phan tu cua mang: ")
+        let arr = new Array(n)
+        for (let i = 0 ; i < arr.length; i++){
+            arr[i]= prompt("nhap vao phan tu thu " + (i+1) + ":")
+        }
+        //return: tu khoa dinh danh ham co gtri tra ve
+        return arr
+    }
+
+    function bai1(){
+        let arr = getArray()
+        console.log(arr)
+        let count = 0
+        for(let value of arr){
+            if (value % 2 === 0){
+                count += 1
+                console.log(value)
+            }
+        }
+        console.log("so luong so chan la: " + count)
+    }
+
+    function bai2(){
+        let arr = getArray()
+        let count = 0
+        for(let value of arr){
+            if (value === "a"){
+                count += 1
+            }
+        }
+        console.log("So luong phan tu 'a' la: " + count)
+    }
+// ham co tham so: tham so la trong ngoac tron
+//Tham so dc coi nhu bien sdung trong ham ma ko can khoi tao
+    function isPrime(number){
+        if (number <2){
+            return false
+        }else{
+            for (let i = 2; i <= Math.sqrt(number); i++){
+                if (number % i ===0){
+                    return false
+                }
+            }
+            return true
+        }
+    }
+    function bai3(){
+        let arr = getArray()
+        let sum = 0
+        for(let value of arr){
+            if (isPrime(value)){
+                sum += (+value)
+                console.log(value)
+            }
+        }
+        console.log("Tong gia tri cac SNT la: " + sum)
+    }
+
+    function bai4(){
+        let number = 0
+        let sum = 0
+        while(number < 500){
+            if (isPrime(number)){
+                sum += number
+                console.log(number)
+            }
+            number++
+        }
+        console.log("Tong gia tri cac SNT < 500 la: " + sum)
+    }
+</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let arr=[4,5,6,7]
+    console.log(arr.length);
+    
+    // them phan tu vao cuoi mang
+    console.log(arr.push(8))
+
+    //them phan tu vao dau mang
+    console.log(arr.unshift(8))
+    
+    //xoa phan tu cuoi
+    console.log(arr.pop())
+    
+    //xoa phan tu dau
+    console.log(arr.shift())
+
+    //no mang thanh 1
+    let arr1=[9,10]
+    let arr2 = arr.concat(arr1)
+    console.log(arr2)
+
+    //noi cacs phan tu the dieu kien: ket qua la string
+    console.log(arr2.join(""))
+    //split: cat chuoi bang mang cac phan tu
+    let string = "abc"
+    console.log(string.split(" "))
+    
+    let string1 = "hello everybody"
+    console.log(string.split(""))
+    
+    //cat bo phan tu cua mang cu tra ve gia tri cut
+    let arr3 =[2,3,4,5]
+    console.log(arr3.splice(2,1))
+    console.log(arr3)
+
+    //cat lay gia tri cua mang khong anh huong mang cu
+    let arr4 =[5,6,7,8]
+    console.log(arr4.slice(1,2))
+    console.log(arr4)
+
+    //lay ve vi tri cua mot gia tri trng mang; tra ve -1 neu khong cos
+    let arr5=[4,5,6,1,6]
+    console.log(arr5.indexOf(4))
+    console.log(arr5.lastIndexOf(6))
+</script>
+</html>
